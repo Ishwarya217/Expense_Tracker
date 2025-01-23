@@ -12,8 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 class DatabaseConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/ExpenseTrackerDB";   //database_name
-    private static final String USER = "root";     //username
+    private static final String URL = "jdbc:mysql://localhost:3306/ExpenseTrackerDB";//database_name
+    private static final String USER = "root";  //username
     private static final String PASSWORD = "root"; //password
 
     public static Connection getConnection() throws SQLException {
@@ -56,11 +56,11 @@ class Expense {
     }
 }
 
-class ExpenseTracker {
+class ExpensesTracker {
     private List<Expense> expenses;
     private final String fileName = "expenses.txt";
 
-    public ExpenseTracker() {
+    public ExpensesTracker() {
         expenses = new ArrayList<>();
         loadExpenses();
     }
@@ -172,10 +172,10 @@ class ExpenseTracker {
     }
 }
 
-public class ExpenserTrackerApp {
+public class ExpenseTracker {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ExpenseTracker tracker = new ExpenseTracker();
+        ExpensesTracker tracker = new ExpensesTracker();
 
         while (true) {
             System.out.println("\nExpense Tracker");
