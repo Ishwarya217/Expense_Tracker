@@ -16,3 +16,10 @@ Welcome to the **Expense Tracker** application! This Java-based console applicat
 - MySQL (for future database integration)
 - Text files (for initial data storage)
 
+## SQL Scripts
+The `database.sql` file contains all the necessary SQL commands for setting up the database.
+
+### How to Use
+1. Open your database client (e.g., MySQL Workbench, pgAdmin, etc.).
+2. Run the commands in `sql/database.sql` to initialize the database.
+
